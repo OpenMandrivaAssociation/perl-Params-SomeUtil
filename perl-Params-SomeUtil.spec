@@ -6,7 +6,6 @@ License:	Artistic-2.0
 Group:		Development/Perl
 URL:		https://metacpan.org/release/Params-SomeUtil
 Source0:	https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Params-SomeUtil-%{version}.tar.gz
-BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(ExtUtils::MakeMaker)
@@ -31,5 +30,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 %files
 %doc Changes README
-%{perl_vendorlib}/Params/*
+%{perl_vendorarch}/Params*
+%{perl_vendorarch}/auto/Params*
 %{_mandir}/man3/*
